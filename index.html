@@ -12,11 +12,11 @@
     <h1>Build A Pet</h1>
     <form id="myForm">
         <div>Name:</div>
-         <textarea rows = '2' cols = '50'> </textarea>
+         <textarea rows = '2' cols = '50' id = "name"> </textarea>
         <br>
      <div class = "input-container">
          <h1>Type of Pet:</h1>
-        <select>
+        <select id = "type">
             <option value="Burger">Burger</option>
             <option value="PIKACHUUUUUU">PIKACHUUUUUU</option>
             <option value="Your Mom">Your Mom</option>
@@ -25,23 +25,31 @@
     </div>
     <div class = "input-container">
         <h2>Number of Legs:</h2>
-        <input type = "radio" value = "1" name = "legs" class = "legs">1
-        <input type = "radio" value = "2" name = "legs" class = "legs">2
-        <input type = "radio" value = "3" name = "legs" class = "legs">3
-        <input type = "radio" value = "4" name = "legs" class = "legs">4
-        <input type = "radio" value = "5" name = "legs" class = "legs">wtf
+        <div id = "leg">
+        <input type = "radio" value = "1" name = "legs" class = "legs" id = "leg1">1
+        <input type = "radio" value = "2" name = "legs" class = "legs" id = "leg2">2
+        <input type = "radio" value = "3" name = "legs" class = "legs" id = "leg3">3
+        <input type = "radio" value = "4" name = "legs" class = "legs" id = "leg4" >4
+        <input type = "radio" value = "5" name = "legs" class = "legs" id = "leg5">wtf
+        </div>
     </div>
-    <div class = "input-container">
+    <div id = "abilities" class = "input-container">
         <h2>Special Abilities</h2>
-        <input type = "checkbox" value = "thunderbolt or some shit">thunderbolt
-        <input type = "checkbox" value = "delicious">delicious
-        <input type = "checkbox" value = "rise from the dead"> rise from the dead
+        <input type = "checkbox" value = "thunderbolt or some shit" id = "thunderbolt">thunderbolt
+        <input type = "checkbox" value = "delicious" id = "delicous">delicious
+        <input type = "checkbox" value = "rise from the dead" id = "jesus"> rise from the dead
     </div>
-    <div class = "input-container">
+    <div id = "email" class = "input-container">
         <h2>Pet Email:</h2>
-        <textarea name="email" id="eamil" cols="30" rows="10"></textarea>
+        <textarea name="email" id="email" cols="30" rows="10"></textarea>
     </div>
-    <div class = "input-container">
+    <div id = "password" class = "input-container">
+        <h2>Pet Password:</h2>
+        <textarea name="password" id="password" cols="30" rows="10"></textarea>
+    </div>
+    <div id = "description" class = "input-container">
+        <h2>Pet Description</h2>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
     </div>
         <input type="submit">
     </form>
