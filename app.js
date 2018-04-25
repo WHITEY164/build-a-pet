@@ -16,5 +16,6 @@ window.onload = function() {
         console.log(email.value);
         console.log(password.value);
         console.log(description.value);
+        alert("no no no i dont want to print it");
     })
     }
